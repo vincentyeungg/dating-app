@@ -10,5 +10,7 @@ namespace API.Entities
         // EF will automatically set this as an auto increment primary key if we use 'int Id'
         public int Id { get; set; }
         public string UserName { get; set; }
+        public byte[] PasswordHash { get; set; }
+        public byte[] PasswordSalt { get; set; }
     }
 }
